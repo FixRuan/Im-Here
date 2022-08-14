@@ -23,3 +23,33 @@ export const ProjectDate = styled.Text`
     font-family: ${({theme}) => theme.fonts.regular};
     color: ${({theme}) => theme.colors.gray};
 `;
+
+export const ProjectAdd = styled.View`
+    padding: 0px 24px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 26px;
+`;
+
+export const Input = styled.TextInput.attrs({
+    placeholderTextColor: '#3C3A3F'
+})`
+    height: 56px;
+    width: 80%;
+    background-color: ${({theme}) => theme.colors.shape};
+    color: ${({theme}) => theme.colors.white};
+    font-size: 16px;
+    padding: 0px 12px;
+    border-radius: 4px;
+`;
+
+export const AddButton = styled.TouchableOpacity`
+    height: 56px;
+    width: 20%;
+    background-color: ${({theme}) => theme.colors.green};
+    margin-left: 8px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+`;
