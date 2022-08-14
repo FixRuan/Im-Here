@@ -5,5 +5,10 @@ export default {
         red: '#E93C4D',
         green: '#00CF6E',
         gray: '#3C3A3F',
+        white: '#FFFFFF'
+    },
+    fonts: {
+        regular: 'Roboto_400Regular',
+        bold: 'Roboto_700Bold',
     }
 }
