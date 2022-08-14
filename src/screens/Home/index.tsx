@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 
 import { Plus } from 'phosphor-react-native';
@@ -12,10 +12,26 @@ import {
     ProjectAdd,
     Input,
     AddButton,
+    Participants,
+    Title,
 } from './styles';
+import { ParticipantCard } from '../../components/ParticipantCard';
+import { FlatList } from 'react-native';
 
 
 export function Home() {
+    const [participants, setParticipants] = useState([
+        {
+            id: '1',
+            name: 'Ruan Pablo'
+        },
+        {
+            id: '2',
+            name: 'Pablo'
+        }
+    ]);
+
+
     return (
         <Container>
             <StatusBar translucent style='light' />
@@ -31,6 +47,15 @@ export function Home() {
                     <Plus size={28} color="#FFFFFF" />
                 </AddButton>
             </ProjectAdd>
+
+            <Participants>
+                <Title>Participantes</Title>
+
+                <FlatList
+                    data={participants}
+                    renderItem={({ item }) => <ParticipantCard key={item.id} />}
+                />
+            </Participants>
 
         </Container>
     )

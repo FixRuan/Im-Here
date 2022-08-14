@@ -53,3 +53,16 @@ export const AddButton = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
 `;
+
+export const Participants = styled.View`
+    padding: 0px 24px;
+    margin-top: 30px;
+`;
+
+export const Title = styled.Text`
+    font-size: 18px;
+    font-family: ${({theme}) => theme.fonts.bold};
+    color: ${({theme}) => theme.colors.white};
+    opacity: 0.7;
+    margin-bottom: 28px;
+`;
