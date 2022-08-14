@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo-google-fonts/roboto": "^0.2.2",
+    "@types/uuidv4": "^5.0.0",
     "expo": "~46.0.6",
     "expo-app-loading": "~2.1.0",
     "expo-font": "~10.2.0",
@@ -23,7 +24,8 @@
     "react-native-svg-transformer": "^1.0.0",
     "react-native-web": "~0.18.7",
     "styled-components": "^5.3.5",
-    "styled-components-react-native": "^1.0.0"
+    "styled-components-react-native": "^1.0.0",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

@@ -55,6 +55,7 @@ export const AddButton = styled.TouchableOpacity`
 `;
 
 export const Participants = styled.View`
+flex: 1;
     padding: 0px 24px;
     margin-top: 30px;
 `;
